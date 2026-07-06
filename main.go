@@ -14,6 +14,10 @@ type b struct{
 	best string
 }
 
+type say struct{
+	world string
+}
+
 func main() {
 	we := koda{
 		are: a{
@@ -23,4 +27,9 @@ func main() {
 		},
 	}
 	fmt.Println(we.are.the.best)
+
+	hello := say{
+		world: "Hello World",
+	}
+	fmt.Println(hello.world)
 }
